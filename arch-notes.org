@@ -1,0 +1,59 @@
+* luke smith how to install arch
+** basic install -  https://www.youtube.com/watch?v=4PBqpX0_UOc&t=224s
+
+partition1 200mb, boot partition
+boot, swap, root, home
+
+150%
+25GB root
+
+
+** just after install -  https://www.youtube.com/watch?v=nSHOb8YU9Gw&t=10s
+Window manager:-
+i3-gaps, the window manager
+i3-status, status bar
+rxvt-unicode, terminal emulator
+dmenu, run prompt by default in i3
+
+nm-applet, network manager (~ the top menu bar)
+fonts, pacman -S ttf-linux-libertine ttf-inconsolata (monaco find)
+
+~/.config/fontconfig/fonts.conf - manually
+~/.xinitrc, put: exec emacs
+
+[[https://www.youtube.com/watch?v=nSHOb8YU9Gw&amp;t=120s][02:00 - Users and Groups]]
+[[https://www.youtube.com/watch?v=nSHOb8YU9Gw&amp;t=241s][04:01 - Sudoers file]]
+[[https://www.youtube.com/watch?v=nSHOb8YU9Gw&amp;t=516s][08:36 - DE vs. WM]]
+[[https://www.youtube.com/watch?v=nSHOb8YU9Gw&amp;t=563s][09:23 - Xorg]]
+[[https://www.youtube.com/watch?v=nSHOb8YU9Gw&amp;t=650s][10:50 - i3wm]]
+[[https://www.youtube.com/watch?v=nSHOb8YU9Gw&amp;t=745s][12:25 - Fonts]]
+[[https://www.youtube.com/watch?v=nSHOb8YU9Gw&amp;t=973s][16:13 - XFCE]]
+[[https://www.youtube.com/watch?v=nSHOb8YU9Gw&amp;t=1079s][17:59 - What to do if you messed up]]
+[[https://www.youtube.com/watch?v=nSHOb8YU9Gw&amp;t=1248s][20:48 - LightDM]]
+[[https://www.youtube.com/watch?v=nSHOb8YU9Gw&amp;t=1342s][22:22 - SystemD]]
+[[https://www.youtube.com/watch?v=nSHOb8YU9Gw&amp;t=1400s][23:20 - Miscellaneous customization]]
+
+
+
+----------------------------------
+Tips and tricks
+Autostart X at login
+Make sure that startx is properly configured.
+
+For Bash, add the following to the bottom of ~/.bash_profile. If the file does not exist, copy a skeleton version from /etc/skel/.bash_profile. For Zsh, add it to ~/.zprofile.
+
+if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  exec startx
+fi
+------------------------------------------
+
+inspiration: https://i.imgur.com/vMLOpr9.png
+
+
+
+** system management - https://www.youtube.com/watch?v=4Jx-5Zp28VQ&t=186s
+
+
+
+** chrome vs firefox https://www.google.co.in/search?q=arch+linux+firefox+vs+chrome&oq=arch+linux+chrome+vs+&aqs=chrome.3.69i57j0l3j69i64.13066j0j1&sourceid=chrome&ie=UTF-8
+
