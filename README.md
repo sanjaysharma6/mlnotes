@@ -223,3 +223,9 @@ plt.hist(np.random.randn(20000), bins=200)
   #+END_EXAMPLE
   # Out[9]:
   : <module 'numpy' from '/Users/sanjay/.virtualenvs/mlm/lib/python3.7/site-packages/numpy/__init__.py'>
+  
+  * Arecanut parsing POST request:-
+  POST https://www.unnathisoft.com/mamcos-admin/current-rates.php
+  l=&rt_bnc_Id=10&rt_Date=2019-01
+
+  The parameters are to be passed as headers in postman
